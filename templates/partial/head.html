@@ -1,0 +1,43 @@
+{% load static %}
+<div class="navbar-area">
+        <div class="acavo-responsive-nav">
+            <!-- Container -->
+            <div class="container">
+                <div class="acavo-responsive-menu">
+                    <div class="logo">
+                        <a href='{% url 'home_view' %}'>
+                            <img style="height: 40px; width: 180px" src="{% static 'images/logo.png' %}" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /Container -->
+        </div>
+        <div class="acavo-nav">
+            <!-- Container -->
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class='navbar-brand' href='{% url 'home_view' %}'>
+                        <img style="height: 40px; width: 220px" src="{% static 'images/logo.png' %}" alt="logo">
+                    </a>
+                    <div class="collapse navbar-collapse mean-menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="{% url 'home_view' %}" class="nav-link active">Home</a>
+                            </li>
+
+                            <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About Us </a>
+                            </li>
+
+                            <li class="nav-item"><a href="{% url 'solution' %}" class="nav-link">Solutions </a>
+                            </li>
+
+                            <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- /Container -->
+        </div>
+    </div>

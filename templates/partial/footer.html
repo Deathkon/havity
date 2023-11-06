@@ -1,0 +1,84 @@
+{% load static %}
+
+
+<footer class="footer-style bg-gray-100 pt-200">
+        <!-- Container -->
+        <div class="container">
+            <div class="footer-middle-area mt-30 pb-30 pt-60">
+                <!-- row -->
+                <div class="row">
+                    <!-- col -->
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="footer-wrapper mb-30">
+                            <h3 class="footer-title">About Us</h3>
+                            <div class="footer-text">
+                                <p>Havity Group is a dynamic company in the world of technology and innovation.
+                                 Our solutions empowers businesses and individuals, making life simpler, more secure, and full of possibilities.</p>
+                            </div>
+                            <div class="footer-icon">
+                                <a href="https://www.facebook.com/havitygroup/"><i class="uil uil-facebook-f"></i></a>
+                                {% comment %} <a href="#"><i class="uil uil-twitter"></i></a> {% endcomment %}
+                                <a href="https://www.instagram.com/havitygroup/"><i class="uil uil-instagram-alt"></i></a>
+                                {% comment %} <a href="https://www.threads.net/@havitygroup"><i class="uil uil-threads"></i></a> {% endcomment %}
+                                <a href="https://www.linkedin.com/company/havitygroup"><i class="uil uil-linkedin"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col -->
+                    <!-- col -->
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="footer-wrapper mb-30">
+                            <h3 class="footer-title">Useful Links</h3>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="{% url 'home_view' %}">Home</a></li>
+                                    <li><a href='#!'>Terms of Use</a></li>
+                                    <li><a href="{% url 'about' %}">About us</a></li>
+                                    <li><a href="{% url 'solution' %}">Solutions</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col -->
+                    <!-- col -->
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="footer-wrapper mb-30">
+                            <h3 class="footer-title">Subscribe</h3>
+                            <div class="subscribes-form">
+                                <form action="#">
+                                    <input placeholder="Enter email " type="email">
+                                    <button class="btn theme-btn-1 width-100 mt-10"><i
+                                            class="lab la-telegram-plane me-2"></i>subscribe</button>
+                                </form>
+                            </div>
+                            <div class="footer-info">
+                                <p>Get the latest updates via email. Any time you may unsubscribe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col -->
+                </div>
+                <!-- /row -->
+            </div>
+            <div class="footer-bottom-area pt-25 pb-25">
+                <!-- row -->
+                <div class="row">
+                    <!-- col -->
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="copyright">
+                            <p>© Copyrights 2023 <a href="{% url 'home_view' %}">HAVITY Labs.</a> All rights reserved.</p>
+                        </div>
+                    </div>
+                    <!-- col -->
+                    <!-- /col -->
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                    </div>
+                    <!-- /col -->
+                </div>
+                <!-- /row -->
+            </div>
+        </div>
+        <!-- /Container -->
+    </footer>
